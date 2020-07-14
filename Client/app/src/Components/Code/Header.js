@@ -6,7 +6,7 @@ import flagSwedish from '../../Flag/sweden.svg'
 import '../Style/Header.css';
 
 function Header() {
-  const [ language, setLanguage ] = useState('');
+  const [ language, setLanguage ] = useState('English');
   const getLanguage = (e) => {
     setLanguage(e.target.getAttribute('value'));
   }
@@ -19,23 +19,22 @@ function Header() {
           <ul>
             <NavLink to="/" style={{ textDecoration: 'none'}}>
               <li>
-                <p>Home</p>
+                <p>{language === 'Svenska' ? 'Hem': 'Home'}</p>
               </li>
             </NavLink>
             <NavLink to="/my work" style={{ textDecoration: 'none' }}>
               <li>
-                <p>My Work</p>
-                
+              <p>{language === 'Svenska' ? 'Galleri': 'My Work'}</p>
               </li>
             </NavLink>
             <NavLink to="/about me" style={{ textDecoration: 'none' }}>
               <li >
-                <p>About Me</p>
+                <p>{language === 'Svenska' ? 'Om Mig': 'About Me'}</p>
               </li>
               </NavLink>
             <NavLink to="/contacts" style={{ textDecoration: 'none' }}>
               <li>
-                <p>Contacts</p>
+                <p>{language === 'Svenska' ? 'Kontakter': 'Contacts'}</p>
               </li>
             </NavLink>
           </ul>
