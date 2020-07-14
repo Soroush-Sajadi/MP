@@ -1,9 +1,12 @@
 import React from 'react';
-import '../Style/Header.css';
+import background from '../../Background-Pictures/Background2.jpg'
+import '../Style/Home.css';
 
 function Home() {
   return (
-     <div>Home</div>
+     <div className="home-wrapper">
+         <img src={background} alt="background" />
+     </div>
   );
 }
 
