@@ -1,39 +1,39 @@
 [
     {
         "title":"Portrait",
-        "picture":"http://localhost:3000/images/Portrait",
+        "picture":"http://localhost:3000/cathegory/Portrait",
         "English": "The first, most widely used phrases are derived from the ancient Roman philosopher Cicero’s work De finibus bonorum et malorum (“On the ends of good and evil”):",
         "Svenska":"äasäa,cf,ae äaslsa äasöäas öäasäö,as aäsäöascamvaöd,äö,a öa,scöc,asmc öla,söc,öäa,c paskcnöäpadjvamdklvcamscknpnad "
     },
     {
         "title":"Wedding",
-        "picture":"http://localhost:3000/images/Wedding",
+        "picture":"http://localhost:3000/cathegory/Wedding",
         "English": "The first, most widely used phrases are derived from the ancient Roman philosopher Cicero’s work De finibus bonorum et malorum (“On the ends of good and evil”):",
         "Svenska":"äasäa,cf,ae äaslsa äasöäas öäasäö,as aäsäöascamvaöd,äö,a öa,scöc,asmc öla,söc,öäa,c paskcnöäpadjvamdklvcamscknpnad "
     },
     {
         "title":"Kids",
-        "picture":"http://localhost:3000/images/Kids",
+        "picture":"http://localhost:3000/cathegory/Kids",
         "English": "The first, most widely used phrases are derived from the ancient Roman philosopher Cicero’s work De finibus bonorum et malorum (“On the ends of good and evil”):",
         "Svenska":"äasäa,cf,ae äaslsa äasöäas öäasäö,as aäsäöascamvaöd,äö,a öa,scöc,asmc öla,söc,öäa,c paskcnöäpadjvamdklvcamscknpnad "
     },
     {
         "title":"Couples",
-        "picture":"http://localhost:3000/images/Couples",
+        "picture":"http://localhost:3000/cathegory/Couples",
         "English": "The first, most widely used phrases are derived from the ancient Roman philosopher Cicero’s work De finibus bonorum et malorum (“On the ends of good and evil”):",
         "Svenska":"äasäa,cf,ae äaslsa äasöäas öäasäö,as aäsäöascamvaöd,äö,a öa,scöc,asmc öla,söc,öäa,c paskcnöäpadjvamdklvcamscknpnad "
 
     },
     {
         "title":"Modeling",
-        "picture":"http://localhost:3000/images/Modeling",
+        "picture":"http://localhost:3000/cathegory/Modeling",
         "English": "The first, most widely used phrases are derived from the ancient Roman philosopher Cicero’s work De finibus bonorum et malorum (“On the ends of good and evil”):",
         "Svenska":"äasäa,cf,ae äaslsa äasöäas öäasäö,as aäsäöascamvaöd,äö,a öa,scöc,asmc öla,söc,öäa,c paskcnöäpadjvamdklvcamscknpnad "
 
     },
     {
         "title":"Others",
-        "picture":"http://localhost:3000/images/Others",
+        "picture":"http://localhost:3000/cathegory/Others",
         "English": "The first, most widely used phrases are derived from the ancient Roman philosopher Cicero’s work De finibus bonorum et malorum (“On the ends of good and evil”):",
         "Svenska":"äasäa,cf,ae äaslsa äasöäas öäasäö,as aäsäöascamvaöd,äö,a öa,scöc,asmc öla,söc,öäa,c paskcnöäpadjvamdklvcamscknpnad "
 

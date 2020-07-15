@@ -1,0 +1,78 @@
+[
+    {
+        "picture":"http://localhost:3000/kids/kids1",
+        "id": "1"
+
+    },
+    {
+        "picture":"http://localhost:3000/kids/kids2",
+        "id": "2"
+
+    },
+    {
+        "picture":"http://localhost:3000/kids/kids3",
+        "id": "3"
+
+    },
+    {
+        "picture":"http://localhost:3000/kids/kids4",
+        "id": "4"
+
+    },
+    {
+        "picture":"http://localhost:3000/kids/kids5",
+        "id": "5"
+
+    },
+    {
+        "picture":"http://localhost:3000/kids/kids6",
+        "id": "6"
+
+    },
+    {
+        "picture":"http://localhost:3000/kids/kids7",
+        "id": "7"
+
+    },
+    {
+        "picture":"http://localhost:3000/kids/kids8",
+        "id": "8"
+
+    },
+    {
+        "picture":"http://localhost:3000/kids/kids9",
+        "id": "9"
+
+    },
+    {
+        "picture":"http://localhost:3000/kids/kids10",
+        "id": "10"
+
+    },
+    {
+        "picture":"http://localhost:3000/kids/kids11",
+        "id": "11"
+
+    },
+    {
+        "picture":"http://localhost:3000/kids/kids12",
+        "id": "12"
+
+    },
+    {
+        "picture":"http://localhost:3000/kids/kids13",
+        "id": "13"
+
+    },
+    {
+        "picture":"http://localhost:3000/kids/kids14",
+        "id": "14"
+
+    },
+    {
+        "picture":"http://localhost:3000/kids/kids15",
+        "id": "15"
+
+    }
+    
+]
