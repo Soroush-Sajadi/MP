@@ -5,10 +5,11 @@ import flagBritish from '../../Flag/uk.svg'
 import flagSwedish from '../../Flag/sweden.svg'
 import '../Style/Header.css';
 
-function Header() {
+function Header({ uppDateLanguage }) {
   const [ language, setLanguage ] = useState('English');
   const getLanguage = (e) => {
     setLanguage(e.target.getAttribute('value'));
+    uppDateLanguage(e.target.getAttribute('value'));
   }
   return (
       <div className="header-wrapper">

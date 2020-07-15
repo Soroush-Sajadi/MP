@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom'
 import '../Style/MyWork.css';
 
-function MyWork() {
+function MyWork({ language, uppDateTitle }) {
   const [ data, setData ] = useState([]);
   const [ loading, setLoading ] = useState('Loading');
   
@@ -14,20 +15,26 @@ function MyWork() {
     getData()
   },[]);
 
-  console.log(data)
+  const getTitle = (e) => {
+    uppDateTitle(e.target.getAttribute('value'))
+  }
+
   return (
     <div className="my-work-wrapper">
       {data.length === 0 ? loading 
       :
-      data.map(item => 
+      data.map((item,) => 
         <div className="my-work">
           <div className="my-work-title">
             <h1>{item.title}</h1>
-            <h4>{item.describtion}</h4>
+            <h4>{language === 'English' ? item.English: item.Svenska}</h4>
           </div>
-          <div className="my-work-img">
-            <img src={item.picture} />
-          </div>
+            <div className="my-work-img">
+            <NavLink to={"/my work/" + item.title.toLowerCase()}>
+              <img value={item.title} onClick={getTitle} src={item.picture} />
+            </NavLink>
+            </div>
+       
         </div>
         
       )
