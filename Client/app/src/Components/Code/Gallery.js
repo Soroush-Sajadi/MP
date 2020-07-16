@@ -6,12 +6,20 @@ function Gallery({ title }) {
 	const [ loading, setLoading ] = useState('Loading')
 
 	const getData = async () => {
-		await fetch(`http://localhost:3000/images/${title}`)
-			.then(res => res.json())
-			.then(res => setData(res))
-
+		if ( JSON.parse(window.localStorage.getItem(`${title}`)) === null ) {
+			await fetch(`http://localhost:3000/images/${title}`)
+				.then(res => res.json())
+				.then(res => saveDataToLocalStorage(`${title}`,res))
+		}
+		getDataFromLocalStorage(`${title}`)
 	}
+	const saveDataToLocalStorage = (name, data) => {
+    window.localStorage.setItem(name, JSON.stringify(data));
+  }
 
+  const getDataFromLocalStorage = (name) => {
+    setData(JSON.parse(window.localStorage.getItem(name)));
+  }
 	useEffect(() => {
 		getData();
 	},[])

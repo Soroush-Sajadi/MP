@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { NavLink } from 'react-router-dom'
-import logo from '../../Logo/Logo.png'
-import flagBritish from '../../Flag/uk.svg'
-import flagSwedish from '../../Flag/sweden.svg'
+import logo from '../../images/Logo/Logo.png'
+import flagBritish from '../../images/Flag/uk.svg'
+import flagSwedish from '../../images/Flag/sweden.svg'
 import '../Style/Header.css';
 
 function Header({ uppDateLanguage }) {

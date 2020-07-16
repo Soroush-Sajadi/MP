@@ -7,9 +7,19 @@ function MyWork({ language, uppDateTitle }) {
   const [ loading, setLoading ] = useState('Loading');
   
   const getData = async () => {
-    await fetch (`http://localhost:3000/`)
-      .then(res => res.json())
-      .then(res => setData(res))
+    if ( JSON.parse(window.localStorage.getItem('data')) === null ) {
+      await fetch (`http://localhost:3000/`)
+        .then(res => res.json())
+        .then(res => saveDataToLocalStorage('data',res))
+    }
+    getDataFromLocalStorage('data')
+  }
+  const saveDataToLocalStorage = (name, data) => {
+    window.localStorage.setItem(name, JSON.stringify(data));
+  }
+
+  const getDataFromLocalStorage = (name) => {
+    setData(JSON.parse(window.localStorage.getItem(name)));
   }
   useEffect(()=> {
     getData()
