@@ -1,21 +1,78 @@
 .contacts-wrapper {
     float: left;
-    margin-left: 7%;
-    margin-top: 200px;
+    margin-top: 120px;
+    width: 100%;
+    padding: 0 25%;
     display: flex;
+    flex-wrap: wrap;
+}
+.contacts-email {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 230px;
+    margin: 10px;
+    background-color: aliceblue;
+}
+.contacts-fb {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 230px;
+    margin: 10px;
+    background-color: aliceblue;
+}
+.contacts-instagram {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 230px;
+    margin: 10px;
+    background-color: aliceblue;
+}
+.contacts-tel {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 230px;
+    margin: 10px;   
+    background-color: aliceblue;
 }
 .contacts-email img {
-    width: 100px;
-    height: 100px;
     cursor: pointer;
+    margin-top: 12%;
 }
+
 .contacts-fb img {
-    width: 95px;
-    height: 98px;
     cursor: pointer;
+    margin-top: 12%;
 }
 .contacts-instagram img {
-    width: 100px;
-    height: 100px;
+    margin-top: 12%;
     cursor: pointer;
 }
+.contacts-tel img {
+    margin-top: 12%;
+    cursor: pointer;
+}
+
+.contacts-email p {
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+.contacts-fb p {
+    font-size: 14px;
+    cursor: pointer;
+}
+.contacts-instagram p {
+    font-size: 14px;
+
+    cursor: pointer;
+}
+.contacts-tel p {
+    font-size: 14px;
+    cursor: pointer;
+}
+

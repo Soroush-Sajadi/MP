@@ -8,14 +8,28 @@ function Contacts() {
   return (
     <div className="contacts-wrapper">
       <div className="contacts-email">
-				<img src={email} alt="email" />
-				{/* <a href="soroush.sajadi@appliedtechnology.se">soroush.sajadi@appliedtechnology.se</a> */}
+				<a href="soroush.sajadi@appliedtechnology.se">
+					<img src={email} alt="email" />
+					<p>soroush.sajadi@appliedtechnology.se</p>
+				</a>
 			</div>
 			<div className="contacts-fb">
-				<img src={fb} alt="facebook" />
+				<a href="https://www.facebook.com/su.mu.5439/">
+					<img src={fb} alt="facebook" />
+					<p>soroush.sajadi@appliedtechnology.se</p>
+				</a>
 			</div>
 			<div className="contacts-instagram">
-				<img src={instagram} alt="instagram" />
+				<a href="https://www.facebook.com/su.mu.5439/">
+					<img src={instagram} alt="instagram" />
+					<p>soroush.sajadi@appliedtechnology.se</p>
+				</a>
+			</div>
+			<div className="contacts-tel">
+				<a href="https://www.facebook.com/su.mu.5439/">
+					<img src={instagram} alt="instagram" />
+					<p>soroush.sajadi@appliedtechnology.se</p>
+				</a>
 			</div>
 		</div>
   );
