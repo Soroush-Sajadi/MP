@@ -6,33 +6,29 @@ import '../Style/Contacts.css';
 
 function Contacts() {
   return (
-    <div className="contacts-wrapper">
-      <div className="contacts-email">
-				<a href="soroush.sajadi@appliedtechnology.se">
-					<img src={email} alt="email" />
-					<p>soroush.sajadi@appliedtechnology.se</p>
-				</a>
-			</div>
-			<div className="contacts-fb">
-				<a href="https://www.facebook.com/su.mu.5439/">
-					<img src={fb} alt="facebook" />
-					<p>soroush.sajadi@appliedtechnology.se</p>
-				</a>
-			</div>
-			<div className="contacts-instagram">
-				<a href="https://www.facebook.com/su.mu.5439/">
-					<img src={instagram} alt="instagram" />
-					<p>soroush.sajadi@appliedtechnology.se</p>
-				</a>
-			</div>
-			<div className="contacts-tel">
-				<a href="https://www.facebook.com/su.mu.5439/">
-					<img src={instagram} alt="instagram" />
-					<p>soroush.sajadi@appliedtechnology.se</p>
-				</a>
-			</div>
+		<div className="wrapper-contact">
+    <div className="hexagon">
+  		Email
+  		<div className="face1"></div>
+  		<div className="face2"></div>
 		</div>
-  );
-}
+		<div className="hexagon">
+		Facebook
+		<div className="face1"></div>
+		<div className="face2"></div>
+	</div>
+	<div className="hexagon">
+		Instagram
+		<div className="face1"></div>
+		<div className="face2"></div>
+	</div>
+	<div className="hexagon">
+		Tel
+		<div className="face1"></div>
+		<div className="face2"></div>
+	</div>
+	</div>
+  	);
+	}
 
 export default Contacts;

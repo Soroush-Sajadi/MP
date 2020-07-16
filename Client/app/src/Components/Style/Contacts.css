@@ -1,78 +1,68 @@
-.contacts-wrapper {
-    float: left;
-    margin-top: 120px;
-    width: 100%;
-    padding: 0 25%;
+.wrapper-contact {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-}
-.contacts-email {
-    display: flex;
-    flex-direction: column;
-    width: 260px;
-    height: 230px;
-    margin: 10px;
-    background-color: aliceblue;
-}
-.contacts-fb {
-    display: flex;
-    flex-direction: column;
-    width: 260px;
-    height: 230px;
-    margin: 10px;
-    background-color: aliceblue;
-}
-.contacts-instagram {
-    display: flex;
-    flex-direction: column;
-    width: 260px;
-    height: 230px;
-    margin: 10px;
-    background-color: aliceblue;
-}
-.contacts-tel {
-    display: flex;
-    flex-direction: column;
-    width: 260px;
-    height: 230px;
-    margin: 10px;   
-    background-color: aliceblue;
-}
-.contacts-email img {
-    cursor: pointer;
-    margin-top: 12%;
-}
-
-.contacts-fb img {
-    cursor: pointer;
-    margin-top: 12%;
-}
-.contacts-instagram img {
-    margin-top: 12%;
-    cursor: pointer;
-}
-.contacts-tel img {
-    margin-top: 12%;
-    cursor: pointer;
-}
-
-.contacts-email p {
-    cursor: pointer;
-    font-size: 14px;
+    margin-top: 120px;
+    padding: 0 15%;
 
 }
-
-.contacts-fb p {
-    font-size: 14px;
+.hexagon {
+    position: relative;
+    margin: 100px auto;
+    width: 190px;
+    height: 110px;
+    background-image: url('https://i.imgur.com/IEiqEV0.jpg');
+    background-position: center center;
+    z-index: 1;
+    /* Text styling */
+    line-height: 110px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    color: #fff;
+    color: rgba(255,255,255,.5);
     cursor: pointer;
-}
-.contacts-instagram p {
-    font-size: 14px;
-
-    cursor: pointer;
-}
-.contacts-tel p {
-    font-size: 14px;
-    cursor: pointer;
-}
-
+    transition: color 500ms ease, text-shadow 500ms ease;
+  }
+  .hexagon:hover {
+    color: #fff;
+    text-shadow: 0 0 10px white;
+  }
+  
+  .hexagon .face1,
+  .hexagon .face2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: inherit;
+    z-index: -1;
+    /* Keeps borders smooth in webkit */
+    backface-visibility: hidden;
+  }
+  .hexagon .face1:before,
+  .hexagon .face2:before {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: inherit;
+  }
+  
+  .hexagon .face1 { transform: rotate(60deg); }
+  .hexagon .face1:before {
+    left: 0;
+    transform-origin: left top;
+    transform: rotate(-60deg) translate(-110px, 0);
+  }
+  
+  .hexagon .face2 { transform: rotate(-60deg); }
+  .hexagon .face2:before {
+    right: 0;
+    transform-origin: right top;
+    transform: rotate(60deg) translate(110px, 0);
+  }
