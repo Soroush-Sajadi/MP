@@ -21,6 +21,7 @@
     flex-direction: column;
     width: 45%;
     margin-top: 60px;
+    color: aliceblue;
    
 
 }
@@ -30,6 +31,7 @@
     text-align: justify;
     letter-spacing: 3px;
     margin-left: 5%;
+    color: aliceblue;
 }
 .my-work-title h4:nth-child(2n) {
     text-indent: 50px;

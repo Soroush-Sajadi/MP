@@ -3,6 +3,7 @@ import '../Style/Gallery.css';
 
 function Gallery({ title }) {
 	const [ data, setData ] = useState([]);
+	const [ loading, setLoading ] = useState('Loading')
 
 	const getData = async () => {
 		await fetch(`http://localhost:3000/images/${title}`)
@@ -16,10 +17,18 @@ function Gallery({ title }) {
 	},[])
 	console.log(data)
   return (
-    <div className="gallery-wrapper">
-      Contacts
-    </div>
+		<>
+			{data.length === 0 ? loading 
+			:
+			<div class = "wrapper">
+				{data.map((item, i)=> 
+    				<img src={item.picture}/>
+				)}
+			</div>
+			}
+		</>
   );
 }
 
 export default Gallery;
+
